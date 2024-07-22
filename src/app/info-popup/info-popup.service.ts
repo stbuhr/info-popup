@@ -41,24 +41,28 @@ export class InfoPopupService {
           originY: 'bottom',
           overlayX: 'start',
           overlayY: 'top',
+          panelClass: 'info-popup-top-left',
         },
         {
           originX: 'start',
           originY: 'bottom',
           overlayX: 'end',
           overlayY: 'top',
+          panelClass: 'info-popup-top-right',
         },
         {
           originX: 'end',
           originY: 'top',
           overlayX: 'start',
           overlayY: 'bottom',
+          panelClass: 'info-popup-bottom-left',
         },
         {
           originX: 'start',
           originY: 'top',
           overlayX: 'end',
           overlayY: 'bottom',
+          panelClass: 'info-popup-bottom-right',
         },
       ]);
 

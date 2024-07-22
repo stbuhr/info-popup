@@ -1,3 +1,27 @@
 :host {
   display: block;
 }
+
+.frame {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+::ng-deep .info-popup-top-left .frame {
+  border-top-left-radius: 0;
+}
+
+::ng-deep .info-popup-top-right .frame {
+  border-top-right-radius: 0;
+}
+
+::ng-deep .info-popup-bottom-left .frame {
+  border-bottom-left-radius: 0;
+}
+
+::ng-deep .info-popup-bottom-right .frame {
+  border-bottom-right-radius: 0;
+}
