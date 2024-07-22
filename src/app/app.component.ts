@@ -1,12 +1,12 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { InfoPopupService } from './info-popup/info-popup.service';
-import { InfoPopupOverlayRef } from './info-popup/info-popup.overlayref';
+import { InfoPopupDirective } from './info-popup/info-popup.directive';
 
 @Component({
   selector: 'kode-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, InfoPopupDirective],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
