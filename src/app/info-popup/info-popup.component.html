@@ -1,4 +1,4 @@
-<div class="frame" [style.visibility]="isLoading() ? 'hidden' : 'visible'">
+<div class="frame" [style.opacity]="isLoading() ? '0' : '1'">
   <div class="frame__header">Info</div>
   <div class="frame__content">
     <div class="frame__text" [innerHTML]="content()"></div>
