@@ -1,12 +1,10 @@
 <div class="frame">
-  <div class="frame__header">
-    <h2 class="frame__title">Info</h2>
-    <button class="frame__close" (click)="closePopup()">X</button>
-  </div>
+  <div class="frame__header">Info</div>
   <div class="frame__content">
     <p class="frame__text">Data: {{ data }}</p>
   </div>
   <div class="frame__footer">
-    <button class="frame__button" (click)="closePopup()">Close</button>
+    <a href="#" class="frame__button" (click)="closePopup()">Später</a>
+    <a href="#" class="frame__button" (click)="closePopup()">Alles klar!</a>
   </div>
 </div>
