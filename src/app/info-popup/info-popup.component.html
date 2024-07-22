@@ -1,10 +1,15 @@
-<div class="frame">
+<div class="frame" [style.visibility]="isLoading() ? 'hidden' : 'visible'">
   <div class="frame__header">Info</div>
   <div class="frame__content">
-    <p class="frame__text">{{ data }}</p>
+    <div class="frame__text" [innerHTML]="content()"></div>
   </div>
   <div class="frame__footer">
     <a href="#" class="frame__button" (click)="closePopup()">Später</a>
     <a href="#" class="frame__button" (click)="closePopup()">Alles klar!</a>
   </div>
+  <div
+    class="countdown"
+    [style.padding-left]="countdownPadding()"
+    [style.padding-right]="countdownPadding()"
+  ></div>
 </div>
